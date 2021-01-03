@@ -93,7 +93,7 @@ namespace EcoSystem.OAuth.Configuration
                 },
                 new Client{
                     ClientId = "econetwork_spa",
-                    ClientSecrets = new [] { new Secret("secret".Sha256()) },
+                    //ClientSecrets = new [] { new Secret("secret".Sha256()) },
                     RequireClientSecret = false,
                     //RequirePkce = true,
                     AllowedGrantTypes = GrantTypes.Implicit,
