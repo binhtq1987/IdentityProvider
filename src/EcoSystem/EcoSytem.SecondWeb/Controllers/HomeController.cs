@@ -38,19 +38,19 @@ namespace EcoSytem.SecondWeb.Controllers
             await HttpContext.Authentication.SignOutAsync("oidc");
         }
 
-        public async Task<IActionResult> FrontChannelLogout(string sid)
-        {
-            if (User.Identity.IsAuthenticated)
-            {
-                var currentSid = User.FindFirst("sid")?.Value ?? "";
-                if (string.Equals(currentSid, sid, StringComparison.Ordinal))
-                {
-                    await HttpContext.Authentication.SignOutAsync("Cookies");
-                }
-            }
+        //public async Task<IActionResult> FrontChannelLogout(string sid)
+        //{
+        //    if (User.Identity.IsAuthenticated)
+        //    {
+        //        var currentSid = User.FindFirst("sid")?.Value ?? "";
+        //        if (string.Equals(currentSid, sid, StringComparison.Ordinal))
+        //        {
+        //            await HttpContext.Authentication.SignOutAsync("Cookies");
+        //        }
+        //    }
 
-            return NoContent();
-        }
+        //    return NoContent();
+        //}
 
         public IActionResult Contact()
         {

@@ -68,7 +68,8 @@ namespace EcoSystem.OAuth.Configuration
                     AllowAccessTokensViaBrowser = true,
                     RedirectUris = new [] { "http://firstwebapp.local.ccn/signin-oidc" },
                     PostLogoutRedirectUris = new [] { "http://firstwebapp.local.ccn/signout-callback-oidc" },
-                    LogoutUri = "http://firstwebapp.local.ccn/Home/FrontChannelLogout",
+                    LogoutUri = "http://firstwebapp.local.ccn/signout-oidc",
+                    //LogoutUri = "http://firstwebapp.local.ccn/Home/FrontChannelLogout",
                     RequireConsent = false
                 },
                 new Client{
@@ -86,7 +87,8 @@ namespace EcoSystem.OAuth.Configuration
                     AllowAccessTokensViaBrowser = true,
                     RedirectUris = new [] { "http://secondwebapp.local.ccn/signin-oidc" },
                     PostLogoutRedirectUris = new [] { "http://secondwebapp.local.ccn/signout-callback-oidc" },
-                    LogoutUri = "http://secondwebapp.local.ccn/Home/FrontChannelLogout",
+                    LogoutUri = "http://secondwebapp.local.ccn/signout-oidc",
+                    //LogoutUri = "http://secondwebapp.local.ccn/Home/FrontChannelLogout",
                     RequireConsent = false
                 },
                 new Client{

@@ -39,7 +39,7 @@ namespace EcoSystem.OAuth
 
             //var assembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
             services.AddIdentityServer()
-                .AddSigningCredential(new X509Certificate2(@"D:\RnD\IAP\Security\EcoSystem\keys\ecosystem.pfx", "password"))
+                .AddSigningCredential(new X509Certificate2(@"D:\RnD\IAP\Security\IdentityProvider\src\EcoSystem\keys\ecosystem.pfx", "password"))
                 .AddTestUsers(InMemoryConfiguration.Users().ToList())
                 //.AddConfigurationStore(builder => builder.UseSqlServer(Configuration.GetConnectionString("EcoSystem.OAuth"), options => options.MigrationsAssembly(assembly)))
                 //.AddOperationalStore(builder => builder.UseSqlServer(Configuration.GetConnectionString("EcoSystem.OAuth"), options => options.MigrationsAssembly(assembly)));
